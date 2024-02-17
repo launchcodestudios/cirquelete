@@ -194,7 +194,7 @@ gulp.task('build-notify', function (cb) {
 
 // Build files.
 gulp.task('build', 
-	gulp.series('clean', 'js-build', 'copy-files', 'sass-build', 'html-build', 'css-build-bundle', 'delCssPartials')
+	gulp.series('clean', 'js-hint', 'js-build', 'copy-files', 'sass-lint', 'sass-build', 'html-build', 'css-build-bundle', 'delCssPartials', 'build-notify')
 );
 
 
