@@ -148,7 +148,7 @@ gulp.task('browser-sync', function (callback) {
 // Notifications
 gulp.task('watch-notify', function (cb) {
 	notifier.notify({
-		title: 'LCS',
+		title: 'cirquelete',
 		message: 'Watching for changes.',
 		timeout: 2
 	});
@@ -157,7 +157,7 @@ gulp.task('watch-notify', function (cb) {
 
 gulp.task('html-notify', function (cb) {
 	notifier.notify({
-		title: 'LCS',
+		title: 'cirquelete',
 		message: 'HTML has been built and reloaded.',
 		timeout: 2
 	});
@@ -166,7 +166,7 @@ gulp.task('html-notify', function (cb) {
 
 gulp.task('js-notify', function (cb) {
 	notifier.notify({
-		title: 'LCS',
+		title: 'cirquelete',
 		message: 'JS has been built and reloaded.',
 		timeout: 2
 	});
@@ -175,7 +175,7 @@ gulp.task('js-notify', function (cb) {
 
 gulp.task('sass-notify', function (cb) {
 	notifier.notify({
-		title: 'LCS',
+		title: 'cirquelete',
 		message: 'CSS has been built and reloaded.',
 		timeout: 2
 	});
@@ -184,7 +184,7 @@ gulp.task('sass-notify', function (cb) {
 
 gulp.task('build-notify', function (cb) {
 	notifier.notify({
-		title: 'LCS',
+		title: 'cirquelete',
 		message: 'Build is complete.',
 		timeout: 1
 	});
