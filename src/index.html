@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title>Video player</title>
+		<link href="/css/styles.min.css" rel="stylesheet">
+	</head>
+	
+	<body class="helvetica bg-near-black near-white">
+		
+		<div>
+			<div>
+				<video id="video-player" autoplay height="auto" width="100%"><source type="video/mp4" src="https://upload.wikimedia.org/wikipedia/commons/transcoded/5/54/Yawning_kitten.ogv/Yawning_kitten.ogv.480p.vp9.webm"></video>
+			</div>
+			
+			<div class="absolute h-100 flex items-center justify-center w-100">
+				<button id="enter-button" class="mb4 bl-animate-all pointer near-black hover-near-white bg-light-green hover-bg-green bw0 pa3 br3">Enter the world of blah blah blah</button>
+			</div>
+			
+			<div id="questions" class="z-1 bl-fadeout bl-fadein pt4 ph4 left-0 bottom-0 fixed w-100 bg-white-20">
+				<div class="flex items-center w-100 justify-center">
+					<button data-video="v1.mp4" class="mb4 bl-animate-all pointer near-black hover-near-white bg-light-green hover-bg-green bw0 pa3 br3">Question A goes here</button>
+					
+					<button data-video="v2.mp4" class="mb4 ml4-ns bl-animate-all pointer near-black hover-near-white bg-light-green hover-bg-green bw0 pa3 br3">Question B goes here</button>
+				</div>
+				<div class="flex items-center w-100 justify-center">
+					<button data-video="v3.mp4" class="mb4 bl-animate-all pointer near-black hover-near-white bg-light-green hover-bg-green bw0 pa3 br3">Question C goes here</button>
+					
+					<button data-video="v4.mp4" class="mb4 ml4-ns bl-animate-all pointer near-black hover-near-white bg-light-green hover-bg-green bw0 pa3 br3">Question D goes here</button>
+				</div>
+
+			</div>
+		</div>
+		<script src="/js/custom.min.js"></script>
+	</body>
+</html>
