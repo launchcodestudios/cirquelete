@@ -5,13 +5,18 @@
 		questions = document.getElementById('questions'),
 		enterButton = document.getElementById('enter-button');
 	
-	function videoEndHandler() {
+	function videoEndHandler () {
 		questions.classList.remove('bl-fadeout');
 	}
 	
-	function videoStartHandler() {
+	function videoStartHandler () {
 		questions.classList.add('bl-fadeout');
-		enterButton.classList.add('dn');
+		hideIntroButton();
+	}
+	
+	function hideIntroButton () {
+		enterButton.parentElement.classList.add('dn');
+		enterButton.parentElement.classList.remove('flex');
 	}
 	
 	video.addEventListener('play', videoStartHandler, false);
@@ -19,7 +24,7 @@
 	
 	enterButton.addEventListener('click', function () {
 		video.play();
-		enterButton.classList.add('dn');
+		hideIntroButton();
 	});
 	
 	document.getElementById('questions').querySelectorAll('button').forEach(function (el) {
